@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name= "viewport" content = "with-device-width, initial-scale = 1.0">
+<title>Personal Website</title>
+<link rel= "stylesheet" href = "Style.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+<section class="header">
+<nav>
+<a href="index.html"><img src="/Users/aadigupta/Documents/images/AG-logos_black.png" width="90" height="90"></a>
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+    </ul> 
+
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<div class ="text-box">
+<p>Let me introduce myself</p>
+<h1>Aadi Gupta</h1>
+<h4><i>"I don't have dreams, I have goals"</i></h4>
+<a href="About.html" class="hero-btn">Click here to learn more about me</a>
+
+</div>
+</section>
+
+<!--About Me-->
+<section class = "about-me">
+    
+</section>
+
+<!----About----->
+<section class = "about">
+    <h1>About Me</h1>
+    <h5>Born and raised in Indiana, I am a traveling enthusiast with the goal of seeing the most beautiful places on Earth. 
+        Nevertheless, I am a passionate student of technology. 
+        I have a strong background in analytics and pursuing 
+        computer science to create meaningful and interesting 
+        projects that help me learn the ever growing boundaries of technology. 
+    </h5>
+    <div class="row">
+        <div class="col">
+            <h3>Fitness</h3>
+            <p>My whole life I have played a sport, from soccer to swimming to football and 
+                now I dedicate most of my life to working out and playing basketball 
+                just because my health is one of the most important things to me
+            </p>
+        </div>
+        <div class="col">
+            <h3>Travels</h3>
+            <p>Thankfully I was blessed to be born into a family which allowed me to travel the world. 
+                Because of my family I have been to many countries and experienced differnet geographies that could never be possible 
+                in Indiana. I have seen so many different cultures and learned so much more from the history of a country to 
+                a possible future the country is trying to reach. 
+            </p>
+        </div>
+        <div class="col">
+            <h3>Future</h3>
+            <p>My parents are my biggest motivators in my life. They both came from India 
+                and fought for everything they have and everything I have so my biggest goal is to repay them. 
+                Learning from them I decided to go into a technology field for my undergrad in college 
+                because from what I can see the future revolves around how fast technology evolves.
+            </p>
+        </div>
+    </div>
+       
+</section>
+
+<!----Contact----->
+<section class ="contact">
+    <h2>Let's Talk</h2>
+    <div class ="icons">
+        <a href="https://www.instagram.com/aadig_123/">
+        <i class="fa fa-instagram fa-2x"></i></a>
+        <a href="https://www.linkedin.com/in/aditya-gupta-b09b03209/">
+        <i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100094018074506">
+        <i class="fa fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/AadiG123">
+        <i class="fa fa-twitter fa-2x"></i></a>
+        <a href="mailto:aadig1003@gmail.com" target = "_parent">
+        <i class="fa fa-envelope fa-2x"></i></a>
+    </div>
+    <br>
+    <p><i>“Work until you no longer have to introduce yourself.”</i></p>
+
+</section>
+
+
+<!----------Javascricpt for toggle menu button and close button--------->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0"; 
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+
+    </script>
+    
+</body>
+
+</html>
