@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta name= "viewport" content = "with-device-width, initial-scale = 1.0">
+<title>Personal Website</title>
+<link rel= "stylesheet" href = "Style.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    
+<section class="sub-header">
+<nav>
+<a href="index.html"><img src="/Users/aadigupta/Documents/images/AG-logos_black.png" width="90" height="90"></a>
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
+
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="About.html">ABOUT</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+    </ul> 
+
+</div>
+<i class="fa fa-bars" onclick="showMenu()"></i>
+
+</nav>
+<h1>Contact Me</h1>
+</section>
+
+<!--Contact ME -->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3141770.9168570223!2d-89.08140323195494!3d39.73660342454983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x886b50bcd9f81b1d%3A0x7e102fcecb32ec72!2sIndiana!5e0!3m2!1sen!2sus!4v1689541407402!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class = "contact-me">
+    <div class="row-contact">
+        <div class="col-contact">
+            <div>
+                <i class="fa fa-home"></i>
+            <span>
+                <h5> 610 Purdue Mall</h5>
+                <p> West Lafayette, IN 47907</p>
+            </span>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+            <span>
+                <h5> +1 317-506-4837</h5>
+                <p> Monday-Friday, 7AM to 5PM</p>
+            </span>
+            </div>
+
+            <div>
+                <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5> aadig1003@gmail.com</h5>
+                <p> Email for questions</p>
+            </span>
+            </div>
+        </div>
+
+        <div class="col-contact">
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter your email address" required>
+                <input type="text" name="subject" placeholder="Enter subject" required>
+                <textarea rows="8" name="message" placeholder="Message" required></textarea>
+                <button type="submit" class="hero-btn red-btn">Send Message</button>
+            </form>
+        
+        
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+<!----Contact----->
+<section class ="contact">
+    <h2>Let's Talk</h2>
+    <div class ="icons">
+        <a href="https://www.instagram.com/aadig_123/">
+            <i class="fa fa-instagram fa-2x"></i></a>
+            <a href="https://www.linkedin.com/in/aditya-gupta-b09b03209/">
+            <i class="fa fa-linkedin fa-2x"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100094018074506">
+            <i class="fa fa-facebook fa-2x"></i></a>
+            <a href="https://twitter.com/AadiG123">
+            <i class="fa fa-twitter fa-2x"></i></a>
+            <a href="mailto:aadig1003@gmail.com" target = "_parent">
+            <i class="fa fa-envelope fa-2x"></i></a>
+    </div>
+    <br>
+    <p><i>“Work until you no longer have to introduce yourself.”</i></p>
+
+</section>
+
+
+<!----------Javascricpt for toggle menu button and close button--------->
+    <script>
+        var navLinks = document.getElementById("navLinks"); 
+        function showMenu(){
+            navLinks.style.right = "0"; 
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"; 
+        }
+
+    </script>
+    
+</body>
+
+</html>
